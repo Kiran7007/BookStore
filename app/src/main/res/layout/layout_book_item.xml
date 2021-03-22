@@ -15,13 +15,16 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/book_image"
             android:layout_width="0dp"
-            android:layout_height="250dp"
+            android:layout_height="0dp"
             app:bookImage="@{book.imageUrl}"
+            android:scaleType="fitCenter"
+            app:layout_constraintDimensionRatio="1:2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -32,6 +35,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@{book.title}"
+            app:fontFamily="@{`Montserrat-Regular`}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/book_image" />
@@ -42,6 +46,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@{book.subTitle}"
+            app:fontFamily="@{`Montserrat-Regular`}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

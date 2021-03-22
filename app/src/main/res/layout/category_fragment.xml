@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/purple_50"
+        android:background="@color/blue_100"
         android:padding="10dp"
         tools:context=".ui.fragment.category.CategoryFragment">
 
@@ -17,6 +17,7 @@
             android:text="@string/category_description"
             android:textColor="@color/black"
             android:textSize="16sp"
+            app:fontFamily="@{`Montserrat-Regular`}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

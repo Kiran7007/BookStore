@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.navArgs
@@ -43,6 +44,9 @@ class BookFragment : BaseFragment() {
     }
 
     private fun initView() {
+        (requireActivity() as AppCompatActivity).supportActionBar?.title =
+            "Category ${args.categoryId}"
+
         adapter = BookAdapter(viewModel)
         binding.rvBook.adapter = adapter
         binding.rvBook.layoutManager = GridLayoutManager(requireActivity(), 3)

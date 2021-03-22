@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Gutenberg</string>
     <string name="category_description">A social catalogging website that allows you to freely search its database of books, annotations and reviews</string>
+    <string name="search">Search</string>
 </resources>
